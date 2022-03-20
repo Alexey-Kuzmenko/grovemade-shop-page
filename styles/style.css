@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../font/Roboto-Regular.woff2) format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.nav-font-style,
+.nav > a,
+.chart > a {
+  /* font style */
+  font-size: 0.813rem;
+  line-height: 0.938rem;
+  letter-spacing: 0.088rem;
+  text-transform: uppercase;
+  color: #000000;
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+.header {
+  /* element size */
+  width: 100%;
+  max-width: 1440px;
+  height: 75px;
+  /* position */
+  position: relative;
+  margin: 0 auto;
+  /* flex */
+  /* display: flex;
+  flex-flow: column nowrap; */
+  /* testing style */
+  /* background-color: red; */
+}
+.nav {
+  /* size */
+  height: 15px;
+  /* position */
+  position: absolute;
+  margin: 30px 0 0 50px;
+}
+.nav a + a {
+  margin-left: 24px;
+}
+.logo {
+  position: absolute;
+  top: 29px;
+  left: 620px;
+}
+.chart {
+  height: 15px;
+  position: absolute;
+  margin: 30px 0 0 1293px;
+}
+/* hover style for header elements */
+.nav-hover > a:hover {
+  transition-property: background-color;
+  transition-duration: 2s;
+  /* text-decoration: underline black; */
+  background-color: #ccc;
+}
