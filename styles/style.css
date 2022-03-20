@@ -52,8 +52,6 @@ body {
   /* flex */
   display: flex;
   flex-flow: column nowrap;
-  /* testing style */
-  /* background-color: red; */
 }
 .nav {
   /* size */
@@ -64,9 +62,6 @@ body {
   /* flex */
   display: flex;
   align-items: center;
-
-  /* testing style  */
-  /* background-color: blue; */
 }
 .nav a + a {
   margin-left: 24px;
@@ -86,9 +81,6 @@ body {
   /* flex */
   display: flex;
   align-items: center;
-
-  /* testing style  */
-  background-color: blue;
 }
 /* hover style for header elements */
 .nav-hover {
@@ -99,4 +91,12 @@ body {
   transition-property: color;
   transition-duration: 0.7s;
   color: rgb(146, 146, 146);
+}
+.cover {
+  position: absolute;
+  top: 76px;
+  height: 504px;
+  width: 100%;
+  background-image: url(/images/Background.svg);
+  background-size: cover;
 }
