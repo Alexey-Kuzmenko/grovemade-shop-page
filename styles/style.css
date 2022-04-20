@@ -4,11 +4,13 @@
   font-style: normal;
   font-weight: 400;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body,
 h1,
 h2,
@@ -23,80 +25,89 @@ dl,
 dd {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
-.nav-font-style,
-.nav > a,
-.chart > a {
-  /* font style */
-  font-size: 0.813rem;
-  line-height: 0.938rem;
-  letter-spacing: 0.088rem;
-  text-transform: uppercase;
-  color: #000000;
+
+:root {
+  /* font colors */
+  --black: #000000;
+  --wite: #ffffff;
+  --sub-text-color: #a0a0a0;
+  --hover-font-color: #707a7f;
+
+  /* blocks colors */
+  --body-bg-color: #e5e5e5;
+  --block-bg-color: #9aa8b1;
+  --footer-bg-color: #f9f9f9;
 }
+
 body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
 }
-.header {
+
+/* ! Page */
+.page {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+
+  background-color: var(--wite);
+}
+
+.container {
   /* element size */
   width: 100%;
   max-width: 1440px;
-  height: 75px;
-  /* position */
-  position: relative;
   margin: 0 auto;
-  /* flex */
-  display: flex;
-  flex-flow: column nowrap;
 }
-.nav {
-  /* size */
-  height: 100%;
-  /* position */
-  position: absolute;
-  margin-left: 50px;
-  /* flex */
+
+/* ! Header */
+.header {
+  background-color: var(--wite);
+  padding: 30px 50px;
+}
+
+.flex-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
 }
-.nav a + a {
+
+.nav-link,
+.chart-link {
+  position: relative;
+  /* font style */
+  font-size: 0.813rem;
+  line-height: 0.938rem;
+  letter-spacing: 0.088rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.nav-link:nth-child(2) {
   margin-left: 24px;
 }
-.logo {
-  position: absolute;
-  top: 29px;
-  left: 620px;
-}
-.chart {
-  /* element size */
-  height: 100%;
-  /* position */
-  position: absolute;
-  margin-left: 1293px;
 
-  /* flex */
-  display: flex;
-  align-items: center;
+.nav-link:hover,
+.chart-link:hover {
+  transition: all, 0.3s ease;
+  color: var(--hover-font-color);
 }
-/* hover style for header elements */
-.nav-hover {
-  transition-property: color;
-  transition-duration: 0.9s;
-}
-.nav-hover:hover {
-  transition-property: color;
-  transition-duration: 0.7s;
-  color: rgb(146, 146, 146);
-}
-.cover {
+
+.nav-link.active::after,
+.chart-link.active::after {
+  content: "";
   position: absolute;
-  top: 76px;
-  height: 504px;
   width: 100%;
-  background-image: url(/images/Background.svg);
-  background-size: cover;
+  height: 2px;
+  bottom: -0.333rem;
+  left: -1px;
+
+  background-color: var(--black);
 }
