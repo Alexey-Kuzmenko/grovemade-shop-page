@@ -227,6 +227,7 @@ body {
 /* * Inner-container */
 .inner-container {
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
 }
 .image:first-child {
@@ -236,4 +237,30 @@ body {
   max-width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* .figure-content:first-child {
+  margin-right: 25px;
+} */
+
+.figure-content {
+  width: 658px;
+  margin-bottom: 130px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  padding-top: 48px;
+}
+.figure-title {
+  margin-bottom: 23px;
+
+  /* font style */
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+.figure-content > a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
 }
