@@ -32,4 +32,28 @@
         capture: false,
     })
 
+    // * init swiper
+    new Swiper('.swiper', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        mousewheel: {
+            sensivity: 1,
+            eventsTarget: '.swiper-slide'
+        },
+
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        spaceBetween: 25,
+        simulateTouch: true,
+        grabCursor: true,
+        watchOverflow: true,
+
+        // ! this settings make slider looped
+        // loop: true,
+        // loopedSlodes: 4,
+    })
+
 })()
