@@ -146,14 +146,14 @@ body {
   margin-bottom: 12px;
   /* font style */
   font-weight: 400;
-  font-size: 43px;
+  font-size: 2.688rem;
   line-height: 46px;
   text-align: center;
 }
 .cover-subtitle {
   margin-bottom: 28px;
   /* font style */
-  font-size: 15px;
+  font-size: 0.938rem;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.8px;
@@ -163,7 +163,7 @@ body {
   position: relative;
   max-width: 95px;
   /* font style */
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 15px;
   text-align: center;
   letter-spacing: 1.4px;
@@ -195,7 +195,7 @@ body {
   margin-bottom: 23px;
 
   /* font style */
-  font-size: 43px;
+  font-size: 2.688rem;
   line-height: 58px;
   text-align: center;
 }
@@ -204,7 +204,7 @@ body {
 
   /* font style */
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.8px;
@@ -216,7 +216,7 @@ body {
   margin-bottom: 81px;
 
   /* font style */
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 21px;
   text-align: center;
   letter-spacing: 1.4px;
@@ -255,7 +255,7 @@ body {
   margin-bottom: 23px;
 
   /* font style */
-  font-size: 27px;
+  font-size: 1.688rem;
   line-height: 30px;
   text-align: center;
 }
@@ -291,7 +291,7 @@ body {
   /* size */
   margin-bottom: 16px;
   /* font style */
-  font-size: 33px;
+  font-size: 2.063rem;
   line-height: 36px;
   text-align: center;
   color: var(--black);
@@ -299,7 +299,7 @@ body {
 
 .slider-subtitle {
   /* font style */
-  font-size: 15px;
+  font-size: 0.938rem;
   line-height: 18px;
   text-align: center;
   letter-spacing: 0.8px;
@@ -308,14 +308,14 @@ body {
 
 /* !Swiper */
 .wrapper {
-  height: auto;
+  /* height: auto; */
   max-width: 100%;
 }
 /* !test */
-.swiper {
-  /* max-width: 100%; */
+/* .swiper {
+  max-width: 100%;
   width: auto;
-}
+} */
 
 /* * Swiper pagination */
 .swiper-pagination {
@@ -346,6 +346,7 @@ body {
   object-position: center;
 }
 
+/* * Swiper slide features */
 .features {
   margin: 23px 0 95px 0;
 }
@@ -357,6 +358,7 @@ body {
   letter-spacing: 0.7px;
   color: var(--sub-text-color);
 }
+
 .item-price {
   font-size: 0.75rem;
 }
