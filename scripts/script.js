@@ -41,7 +41,7 @@
 
         mousewheel: {
             sensivity: 1,
-            eventsTarget: '.swiper-slide'
+            eventsTarget: '.slider-image'
         },
 
         slidesPerView: 4,
