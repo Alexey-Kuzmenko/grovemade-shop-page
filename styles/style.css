@@ -265,6 +265,35 @@ body {
   margin-bottom: 0;
 }
 
+/* * Slider-container */
+.inner-slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+.slider-content {
+  /* ! test value */
+  margin-bottom: 50px;
+}
+.slider-title {
+  /* size */
+  margin-bottom: 16px;
+  /* font style */
+  font-size: 33px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--black);
+}
+.slider-subtitle {
+  /* font style */
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: var(--sub-text-color);
+}
+
 /* ! To top btn */
 .to-top-btn {
   /* position */
