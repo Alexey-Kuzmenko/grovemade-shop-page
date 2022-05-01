@@ -159,6 +159,7 @@ body {
   text-align: center;
   letter-spacing: 0.8px;
 }
+
 .cover-link {
   display: inline-block;
   position: relative;
@@ -177,6 +178,7 @@ body {
   color: var(--hover-font-color);
   transition: all var(--transition-time) ease;
 }
+
 .cover-link.active::after {
   content: "";
   position: absolute;
@@ -257,6 +259,7 @@ body {
   flex-flow: column wrap;
   padding-top: 48px;
 }
+
 .figure-title {
   margin-bottom: 23px;
 
@@ -265,6 +268,7 @@ body {
   line-height: 30px;
   text-align: center;
 }
+
 .figure-content > a {
   position: relative;
   display: inline-block;
@@ -443,6 +447,45 @@ body {
 
 .title:last-child {
   margin-bottom: 44px;
+}
+
+/* * Benefits */
+.benefits {
+  width: 100%;
+  padding: 120px 0;
+  margin-bottom: 39px;
+
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  background-color: var(--block-bg-color);
+}
+
+.benefits-logo {
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.benefits-title {
+  margin-bottom: 23px;
+
+  /* font style */
+  font-size: 2.688rem;
+  line-height: 3.625rem;
+}
+
+.benefits-subtext {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.benefits-title,
+.benefits-subtext {
+  text-align: center;
+  color: var(--wite);
 }
 
 /* ! To top btn */
