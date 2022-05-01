@@ -421,6 +421,30 @@ body {
   /* object-position: center; */
 }
 
+/* * Photos wrapper */
+.photos-wrapper {
+  margin: 79px 0 124px 0;
+  max-width: 100%;
+
+  /* flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.photo {
+  margin-right: 20px;
+}
+
+.photo:last-child {
+  margin-right: 0px;
+}
+
+.title:last-child {
+  margin-bottom: 44px;
+}
+
 /* ! To top btn */
 .to-top-btn {
   /* position */
