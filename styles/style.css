@@ -537,6 +537,37 @@ body {
   transition: color var(--transition-time) ease;
 }
 
+/* * Newsletter */
+.newsletter {
+  max-width: 348px;
+
+  /* position */
+  position: relative;
+  left: 183px;
+  bottom: 280px;
+
+  border-bottom: var(--black) 1px solid;
+}
+
+.newsletter-title {
+  margin-bottom: 23px;
+
+  /* font style */
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+
+.newsletter-text {
+  margin-bottom: 92px;
+
+  /* font style */
+  font-size: 0.875rem;
+  line-height: 1rem;
+  letter-spacing: 0.05rem;
+
+  color: var(--sub-text-color);
+}
+
 /* * Address */
 .address {
   font-style: normal;
@@ -550,10 +581,16 @@ body {
 .address-link {
   display: inline-block;
   margin-right: 38px;
+
+  /* font-style */
+  font-size: 0.813rem;
+  line-height: 0.938;
+  color: var(--hover-font-color);
 }
 
 .address-p:last-child {
   margin-right: 0;
+  color: var(--black);
 }
 
 /* ! To top btn */
