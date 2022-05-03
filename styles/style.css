@@ -642,6 +642,7 @@ body {
 @media (max-width: 1440px) {
   /* * Photos wrapper */
   .photos-wrapper {
+    max-width: 800px;
     justify-content: space-between;
   }
 
@@ -675,9 +676,9 @@ body {
 
 @media (max-width: 768px) {
   /* * Main */
-  .photo {
+  /* .photo {
     margin-right: 8px;
-  }
+  } */
 
   /* * Footer */
   .footer-links {
