@@ -54,6 +54,28 @@
         // ! this settings make slider looped
         // loop: true,
         // loopedSlodes: 4,
+
+        breakpoints: {
+            280: {
+                slidesPerView: 1
+            },
+            // ? test wariant
+            425: {
+                slidesPerView: 1.1
+            },
+
+            510: {
+                slidesPerView: 2
+            },
+
+            768: {
+                slidesPerView: 3
+            },
+
+            1024: {
+                slidesPerView: 4
+            }
+        }
     })
 
 })()

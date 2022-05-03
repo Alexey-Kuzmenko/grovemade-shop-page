@@ -628,3 +628,150 @@ body {
   opacity: 1;
   transition: all var(--transition-time) ease;
 }
+
+/* ! Media */
+
+/* Breakpoints: 
+  1440px
+  1024px
+  768px
+  512px
+  320px
+*/
+
+@media (max-width: 1440px) {
+  /* * Photos wrapper */
+  .photos-wrapper {
+    justify-content: space-between;
+  }
+
+  .photo {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 1368px), (max-width: 1024px) {
+  .image:first-child {
+    margin-right: 0;
+    order: 1;
+  }
+
+  .figure-content {
+    margin-bottom: 100px;
+  }
+
+  .figure-content:first-child {
+    order: 2;
+  }
+
+  .image:last-child {
+    order: 3;
+  }
+
+  .figure-content:last-child {
+    order: 4;
+  }
+}
+
+@media (max-width: 768px) {
+  /* * Main */
+  .photo {
+    margin-right: 8px;
+  }
+
+  /* * Footer */
+  .footer-links {
+    padding-top: 20px;
+  }
+
+  .newsletter {
+    display: none;
+  }
+
+  .address {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 512px) {
+  /* * Header */
+  .flex-container {
+    justify-content: center;
+    padding: 20px 20px;
+  }
+
+  .nav-link:nth-child(2) {
+    margin: 0 24px;
+  }
+
+  .logo {
+    margin: 20px;
+    order: 1;
+  }
+
+  .nav {
+    order: 2;
+  }
+
+  .chart {
+    order: 2;
+  }
+
+  /* * Photos wrapper */
+  .photos-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo {
+    margin: 10px 0 0 0;
+  }
+
+  /* ! Titles and text size */
+  .cover-title,
+  .container-title,
+  .benefits-title {
+    font-size: 1.875rem;
+  }
+
+  .title {
+    font-size: 1.563rem;
+  }
+
+  .sub-text p {
+    font-size: 0.875rem;
+  }
+
+  .benefits-subtext {
+    font-size: 0.75rem;
+  }
+
+  .footer-links a {
+    font-size: 0.938rem;
+  }
+
+  .address-copyright,
+  .address-p,
+  .address-link {
+    font-size: 0.5rem;
+  }
+
+  .to-top-btn {
+    width: 50px;
+    height: 50px;
+    left: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .items-container,
+  .inner-slider-container,
+  .inner-flex-container,
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-container {
+    padding-bottom: 28px;
+  }
+}
