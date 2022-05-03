@@ -55,17 +55,17 @@
         // loop: true,
         // loopedSlodes: 4,
 
+
         breakpoints: {
             280: {
-                slidesPerView: 1
-            },
-            // ? test wariant
-            425: {
-                slidesPerView: 1.1
+                slidesPerView: 1.1,
+                // ? testing values 
+                spaceBetween: 35,
             },
 
             510: {
-                slidesPerView: 2
+                slidesPerView: 2,
+                spaceBetween: 25,
             },
 
             768: {
