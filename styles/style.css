@@ -46,6 +46,10 @@ a {
   --transition-time: 0.3s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -73,10 +77,6 @@ body {
 }
 
 /* ! Header */
-/* .header {
-  background-color: var(--wite);
-} */
-
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -85,7 +85,7 @@ body {
   padding: 30px 50px;
 }
 
-/* ! Nav */
+/* * Nav */
 .nav-link,
 .chart-link {
   position: relative;
@@ -122,7 +122,7 @@ body {
   background-color: var(--black);
 }
 
-/* !Cover */
+/* * Cover */
 .cover {
   max-width: 100%;
   height: 504px;
@@ -144,6 +144,7 @@ body {
 
 .cover-title {
   margin-bottom: 12px;
+
   /* font style */
   font-weight: 400;
   font-size: 2.688rem;
@@ -153,6 +154,7 @@ body {
 
 .cover-subtitle {
   margin-bottom: 28px;
+
   /* font style */
   font-size: 0.938rem;
   line-height: 18px;
@@ -164,6 +166,7 @@ body {
   display: inline-block;
   position: relative;
   max-width: 95px;
+
   /* font style */
   font-size: 0.813rem;
   line-height: 15px;
@@ -247,10 +250,6 @@ body {
   object-position: center;
 }
 
-/* .figure-content:first-child {
-  margin-right: 25px;
-} */
-
 .figure-content {
   width: 658px;
   margin-bottom: 130px;
@@ -276,10 +275,6 @@ body {
 }
 
 /* * Slider-container */
-/* .slider-container {
-  margin-bottom: 90px;
-} */
-
 .inner-slider-container {
   min-width: 0;
   padding: 0 50px;
@@ -300,6 +295,7 @@ body {
 .slider-title {
   /* size */
   margin-bottom: 16px;
+
   /* font style */
   font-size: 2.063rem;
   line-height: 36px;
@@ -318,14 +314,8 @@ body {
 
 /* !Swiper */
 .wrapper {
-  /* height: auto; */
   max-width: 100%;
 }
-/* !test */
-/* .swiper {
-  max-width: 100%;
-  width: auto;
-} */
 
 /* * Swiper pagination */
 .swiper-pagination {
@@ -384,9 +374,10 @@ body {
   color: var(--wite);
 }
 
-/* Inner flex container */
+/* * Inner flex container */
 .inner-flex-container {
   padding: 0 50px;
+
   /* flex */
   display: flex;
   flex-flow: column wrap;
@@ -675,11 +666,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* * Main */
-  /* .photo {
-    margin-right: 8px;
-  } */
-
   /* * Footer */
   .footer-links {
     padding-top: 20px;
@@ -702,7 +688,7 @@ body {
   }
 
   .nav-link:nth-child(2) {
-    margin: 0 24px;
+    margin: 0 14px;
   }
 
   .logo {
