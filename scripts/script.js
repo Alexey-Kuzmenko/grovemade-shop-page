@@ -5,8 +5,12 @@
     const header = document.querySelector('.header')
     const nav = document.querySelector('.nav')
     const chart = document.querySelector('.chart')
+    const popup = document.querySelector('.popup')
+    const popupTitle = document.querySelector('.popup-title')
+    const popupText = document.querySelector('.popup-text')
     const toTopBtn = document.querySelector('.to-top-btn')
 
+    // * links style
     body.addEventListener('mouseover', function ({ target }) {
         if (target.tagName === 'A') {
             target.classList.add('active')
@@ -18,9 +22,39 @@
         }
     })
 
-    toTopBtn.addEventListener('click', function (event) {
-        // event.preventDefault()
+    // * popup window
+    function renderPopUpWindow(element = popup) {
+        popupTitle.textContent = "Cookies Settings!"
+        popupText.textContent = "We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience."
+        element.classList.add('open')
+    }
 
+    function showPopUpWindow() {
+        window.setTimeout(renderPopUpWindow, 2000)
+    }
+
+    popup.addEventListener('click', function ({ target }) {
+        if (target.classList.contains('popup-colose-btn')) {
+            popup.classList.remove('open')
+        } else if (target.classList.contains('popup-btn')) {
+            popup.classList.remove('open')
+        }
+    })
+
+
+    showPopUpWindow()
+
+    chart.addEventListener('click', function (e) {
+        e.preventDefault()
+        popupTitle.textContent = "Sorry : ("
+        popupText.textContent = "This function now is not available. Try again later."
+        renderPopUpWindow(popup)
+    })
+
+
+
+    // * to top btn
+    toTopBtn.addEventListener('click', function (event) {
         window.scrollTo({
             top: 0,
             behavior: 'smooth',
@@ -54,7 +88,6 @@
         // ! this settings make slider looped
         // loop: true,
         // loopedSlodes: 4,
-
 
         breakpoints: {
             280: {
