@@ -10,6 +10,9 @@
     const popupText = document.querySelector('.popup-text')
     const toTopBtn = document.querySelector('.to-top-btn')
 
+    // ! function calling
+    showPopUpWindow()
+
     // * links style
     body.addEventListener('mouseover', function ({ target }) {
         if (target.tagName === 'A') {
@@ -23,9 +26,18 @@
     })
 
     // * popup window
-    function renderPopUpWindow(element = popup) {
-        popupTitle.textContent = "Cookies Settings!"
-        popupText.textContent = "We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience."
+
+    const popupContent = {
+        cookiesTitle: 'Cookies Settings!',
+        cookiesText: 'We use cookies and similar technologies to help personalize content, tailor and measure ads, and provide a better experience.',
+        chartTitle: 'Sorry : (',
+        chartText: 'This function now is not available. Try again later.'
+    }
+
+    function renderPopUpWindow(element = popup, title = popupContent.cookiesTitle, text = popupContent.cookiesText) {
+        body.dataset.popupIsActive = true
+        popupTitle.textContent = title
+        popupText.textContent = text
         element.classList.add('open')
     }
 
@@ -33,22 +45,26 @@
         window.setTimeout(renderPopUpWindow, 2000)
     }
 
+
+
     popup.addEventListener('click', function ({ target }) {
         if (target.classList.contains('popup-colose-btn')) {
             popup.classList.remove('open')
+            body.dataset.popupIsActive = false
         } else if (target.classList.contains('popup-btn')) {
             popup.classList.remove('open')
+            body.dataset.popupIsActive = false
         }
     })
 
 
-    showPopUpWindow()
 
     chart.addEventListener('click', function (e) {
         e.preventDefault()
+        body.dataset.popupIsActive = true
         popupTitle.textContent = "Sorry : ("
         popupText.textContent = "This function now is not available. Try again later."
-        renderPopUpWindow(popup)
+        renderPopUpWindow(popup, popupContent.chartTitle, popupContent.chartText)
     })
 
 
