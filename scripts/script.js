@@ -1,6 +1,6 @@
 (function () {
 
-    // * header UI elements
+    // * UI elements
     const body = document.body
     const header = document.querySelector('.header')
     const nav = document.querySelector('.nav')
@@ -62,8 +62,6 @@
     chart.addEventListener('click', function (e) {
         e.preventDefault()
         body.dataset.popupIsActive = true
-        popupTitle.textContent = "Sorry : ("
-        popupText.textContent = "This function now is not available. Try again later."
         renderPopUpWindow(popup, popupContent.chartTitle, popupContent.chartText)
     })
 
