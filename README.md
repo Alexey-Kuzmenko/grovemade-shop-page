@@ -1,4 +1,4 @@
-## Hi, my name is Alesha! And this is my first own front-end project.
+## Hi, my name is Alexey! And this is my first front-end project.
 
 ---
 
@@ -12,8 +12,8 @@ Since I want to work Front-end developer and find a job, I created this project 
 
 ### In this project, I use this stack of technologies:
 
-- HTML 5
-- Css 3
+- HTML5
+- CSS3
 - JavaScript
 - Swiper
 
